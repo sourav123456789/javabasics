@@ -1,6 +1,5 @@
 public class Printer {
 
-
     public synchronized void printEven(int no) throws InterruptedException {
         if (no % 2 != 0) {
             wait();
@@ -11,7 +10,6 @@ public class Printer {
         if(no < 99) {
             wait();
         }
-
     }
 
     public synchronized void printOdd(int no) throws InterruptedException {
